@@ -1,10 +1,10 @@
 <!-- Header Banner with Wave -->
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=280&section=header&text=Maheshwar%20Hari%20Tripathi&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35&desc=🚀%20Full-Stack%20Developer%20%7C%20🤖%20AI%20Creator%20%7C%20🎓%20Class%2010%20Student&descAlignY=55&descSize=18)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=280&section=header&text=Maheshwar%20Hari%20Tripathi&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Developer%20·%20AI%20Creator%20·%20Student&descAlignY=55&descSize=20)
 
 <!-- Typing SVG -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=16-year-old+building+the+future+with+code+%F0%9F%92%BB;Full-Stack+Developer+from+Kaushambi%2C+India+%F0%9F%87%AE%F0%9F%87%B3;Creator+of+Vyaas+AI+%26+MElo+Music+Player+%F0%9F%8E%B5;Turning+ideas+into+reality%2C+one+commit+at+a+time+%E2%9C%A8)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=100&lines=I+build+AI+assistants%2C+mobile+apps%2C+desktop+tools+%F0%9F%9A%80;Creator+of+Vyaas+AI+%7C+MElo+Music+Player+%7C+Chaksu+%F0%9F%A4%96;16-year-old+from+Kaushambi%2C+India+%F0%9F%87%AE%F0%9F%87%B3;Every+project+conceived%2C+designed+%26+coded+by+me+%E2%9C%A8)](https://git.io/typing-svg)
 
 </div>
 
@@ -12,22 +12,23 @@
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Light%20Skin%20Tone.png" alt="Man Technologist" width="30" /> &nbsp;About Me
 
-<img align="right" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Snake.png" alt="Snake" width="100" />
-
 ```yaml
 name: Maheshwar Hari Tripathi
 age: 16
+education: Class 10 · St. Joseph's School, Kazipur
 location: Kaushambi, Uttar Pradesh, India 🇮🇳
-school: St. Joseph's School, Kazipur (Class 10)
 website: maheshwar.xyz
-role: Full-Stack Developer & AI Creator
-passion: Building products that make a difference
+roles: Developer · AI Creator · Student
 ```
 
-- 🔭 Currently working on **Vyaas AI** — an intelligent AI assistant
-- 🎵 Built **MElo Music Player** — a modern music player experience
-- 🌱 Learning **Machine Learning, React Native, Cloud Computing**
-- 💡 Love exploring **AI, Web Development & Mobile Apps**
+> *I build AI assistants, mobile apps, desktop tools, and everything in between. Every project listed is something I conceived, designed, and coded myself. My dream is to build AI that genuinely helps people in their everyday lives.*
+
+- 🤖 Currently building **Vyaas AI** — full-stack voice AI assistant with real-time conversation
+- 🎵 Created **MElo Music Player** — dark-themed PWA + Android app with offline downloads
+- 👁️ Developed **Chaksu** — AI safety system using computer vision & 3D face mesh
+- 📱 Built **Liquid Glass Launcher** — futuristic Android home screen with fluid animations
+- 🧠 Running **Custom AI Model** — private local LLM on PC using Ollama (no internet!)
+- 🤖 Made **Robot Arm & Sensors** — Arduino/IoT for smooth servo motor control
 - ⚡ Fun fact: Started coding before high school and never looked back!
 
 ---
@@ -39,29 +40,37 @@ passion: Building products that make a difference
 ### Languages
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
-### Frameworks & Libraries
+### Web & Desktop
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
 
-### AI & ML
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+### Mobile
+![Android](https://img.shields.io/badge/Android_SDK-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+
+### AI & Computer Vision
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![LiveKit](https://img.shields.io/badge/LiveKit-FF2D55?style=for-the-badge&logo=livekit&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+### Tools & Backend
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Chrome Extensions](https://img.shields.io/badge/Manifest_V3-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
 
 </div>
 
@@ -71,18 +80,29 @@ passion: Building products that make a difference
 
 <div align="center">
 
+| Project | Category | Description | Tech |
+|---------|----------|-------------|------|
+| ⭐ **Vyaas AI** | Voice AI Assistant | Full-stack voice assistant with real-time conversation & multi-model AI intelligence | Next.js, Python, LiveKit |
+| 🎵 **MElo Music Player** | Web + Android | Dark-themed music player with millions of searchable songs & offline downloads | JavaScript, Node.js, Capacitor |
+| 👁️ **Chaksu** | Computer Vision | AI safety system that detects closed eyes & triggers alarms using 3D face mesh | Python, OpenCV, NumPy |
+| 📱 **Liquid Glass Launcher** | Android Launcher | Futuristic Android home screen with fluid liquid-glass animations | Android, Kotlin, UI/UX |
+| 🧘 **ZenFocus** | Digital Detox App | Monitors & blocks YouTube when overused. Stealth mode included | Android, Kotlin |
+| 🎬 **Shorts Auto-Scroller** | Chrome Extension | Auto-skips YouTube Shorts longer than 30 seconds | JavaScript, Manifest V3 |
+| 💻 **Hacker Terminal** | Desktop App | Movie-style working terminal emulator desktop app | Electron, xterm.js |
+| ⬇️ **YouTube Downloader** | Web + Android | Fast, clean tool for downloading videos on web & Android | Vite, Express |
+| 📚 **Study Enforcer** | Android App | Keeps students focused by enforcing study habits & tracking progress | Android, Kotlin |
+| 🧠 **Custom AI Model** | Local LLM | Private AI running on PC — no internet, no data sharing | Python, Ollama |
+| 🤖 **Robot Arm & Sensors** | Arduino / IoT | Smooth servo motor control for robotic hands & motion sensors | C++, Arduino |
+
+</div>
+
+<div align="center">
+
 <a href="https://github.com/maheshwarkibehan-hub/vyaas-ai">
 <img src="https://github-readme-stats.vercel.app/api/pin/?username=maheshwarkibehan-hub&repo=vyaas-ai&theme=tokyonight&hide_border=true&border_radius=15" alt="Vyaas AI" />
 </a>
 <a href="https://github.com/maheshwarkibehan-hub/MElo-music-player">
 <img src="https://github-readme-stats.vercel.app/api/pin/?username=maheshwarkibehan-hub&repo=MElo-music-player&theme=tokyonight&hide_border=true&border_radius=15" alt="MElo Music Player" />
-</a>
-
-<a href="https://github.com/maheshwarkibehan-hub/vyaas-frontend">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=maheshwarkibehan-hub&repo=vyaas-frontend&theme=tokyonight&hide_border=true&border_radius=15" alt="Vyaas Frontend" />
-</a>
-<a href="https://github.com/maheshwarkibehan-hub/vyaas-backend">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=maheshwarkibehan-hub&repo=vyaas-backend&theme=tokyonight&hide_border=true&border_radius=15" alt="Vyaas Backend" />
 </a>
 
 </div>
@@ -125,7 +145,7 @@ passion: Building products that make a difference
 
 <div align="center">
 
-### 💬 *"Code is like humor. When you have to explain it, it's bad."* — Cory House
+### 💬 *"My dream is to build AI that genuinely helps people in their everyday lives."*
 
 <br/>
 
