@@ -1,4 +1,4 @@
-<![CDATA[<!-- Header Banner with Wave -->
+<!-- Header Banner with Wave -->
 <div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=280&section=header&text=Maheshwar%20Hari%20Tripathi&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35&desc=🚀%20Full-Stack%20Developer%20%7C%20🤖%20AI%20Creator%20%7C%20🎓%20Class%2010%20Student&descAlignY=55&descSize=18)
