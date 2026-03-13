@@ -82,16 +82,18 @@ roles: Developer · AI Creator · Student
 
 | Project | Category | Description | Tech |
 |---------|----------|-------------|------|
-| ⭐ **Vyaas AI** | Voice AI Assistant | Full-stack voice assistant with real-time conversation & multi-model AI intelligence | Next.js, Python, LiveKit |
-| 🎵 **MElo Music Player** | Web + Android | Dark-themed music player with millions of searchable songs & offline downloads | JavaScript, Node.js, Capacitor |
-| 👁️ **Chaksu** | Computer Vision | AI safety system that detects closed eyes & triggers alarms using 3D face mesh | Python, OpenCV, NumPy |
-| 📱 **Liquid Glass Launcher** | Android Launcher | Futuristic Android home screen with fluid liquid-glass animations | Android, Kotlin, UI/UX |
-| 🧘 **ZenFocus** | Digital Detox App | Monitors & blocks YouTube when overused. Stealth mode included | Android, Kotlin |
+| ⭐ [**Vyaas AI**](https://github.com/maheshwarkibehan-hub/vyaas-ai) | Voice AI Assistant | Full-stack voice assistant with real-time conversation & multi-model AI intelligence | Next.js, Python, LiveKit |
+| 🎵 [**MElo Music Player**](https://github.com/maheshwarkibehan-hub/MElo-music-player) | Web + Android | Dark-themed music player with millions of searchable songs & offline downloads | JavaScript, Node.js, Capacitor |
+| 🧠 [**JARVIS Ultimate AI**](https://github.com/maheshwarkibehan-hub/jarvis-ultimate-ai) | AI Assistant | Core advanced Python-based AI assistant with proactive memory and tools | Python, Groq, Gemini |
+| 👁️ [**Chaksu**](https://github.com/maheshwarkibehan-hub/chaksu-eye-detection) | Computer Vision | AI safety system that detects closed eyes & triggers alarms using 3D face mesh | Python, OpenCV, NumPy |
+| 📱 [**Liquid Glass Launcher**](https://github.com/maheshwarkibehan-hub/liquid-glass-launcher) | Android Launcher | Futuristic Android home screen with fluid liquid-glass animations | Android, Kotlin, UI/UX |
+| 🧘 [**ZenFocus**](https://github.com/maheshwarkibehan-hub/zenfocus-youtube-detox) | Digital Detox App | Monitors & blocks YouTube when overused. Stealth mode included | Android, Kotlin |
+| 💻 [**Hacker Terminal**](https://github.com/maheshwarkibehan-hub/hacker-terminal) | Desktop App | Movie-style working terminal emulator desktop app | Electron, xterm.js |
+| ⬇️ [**YouTube Downloader**](https://github.com/maheshwarkibehan-hub/yt-video-downloader) | Web + Android | Fast, clean tool for downloading videos on web & Android | Vite, Express |
+| 📚 [**Study Enforcer**](https://github.com/maheshwarkibehan-hub/study-enforcer-app) | Android App | Keeps students focused by enforcing study habits & tracking progress | Android, Kotlin |
+| 🌐 [**Portfolio Website**](https://github.com/maheshwarkibehan-hub/portfolio-website) | Web Portfolio | Stunning glassmorphism UI portfolio with custom cursor and Live Preview | HTML, CSS, JS |
+| ✨ [**Next.js Portfolio**](https://github.com/maheshwarkibehan-hub/JARVIS-portfolio) | Web App | A sleek, modern Next.js 16 portfolio with React 19 & Tailwind CSS v4 | Next.js, React, Tailwind |
 | 🎬 **Shorts Auto-Scroller** | Chrome Extension | Auto-skips YouTube Shorts longer than 30 seconds | JavaScript, Manifest V3 |
-| 💻 **Hacker Terminal** | Desktop App | Movie-style working terminal emulator desktop app | Electron, xterm.js |
-| ⬇️ **YouTube Downloader** | Web + Android | Fast, clean tool for downloading videos on web & Android | Vite, Express |
-| 📚 **Study Enforcer** | Android App | Keeps students focused by enforcing study habits & tracking progress | Android, Kotlin |
-| 🧠 **Custom AI Model** | Local LLM | Private AI running on PC — no internet, no data sharing | Python, Ollama |
 | 🤖 **Robot Arm & Sensors** | Arduino / IoT | Smooth servo motor control for robotic hands & motion sensors | C++, Arduino |
 
 </div>
