@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 270" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="vyaasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080E1C"/>
+      <stop offset="50%" stop-color="#0B152A"/>
+      <stop offset="100%" stop-color="#060913"/>
+    </linearGradient>
+
+    <!-- Glass Border Gradient -->
+    <linearGradient id="vyaasBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="35%" stop-color="#818CF8" stop-opacity="0.2"/>
+      <stop offset="75%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <!-- Ambient Cyan Glow -->
+    <radialGradient id="vyaasGlow" cx="80%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Spectrogram Wave Bar Gradient -->
+    <linearGradient id="waveGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#67E8F9"/>
+    </linearGradient>
+
+    <style>
+      .sf-font {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      /* Audio Visualizer Spectrogram Keyframes */
+      @keyframes waveBar1 { 0%, 100% { height: 12px; y: 46px; } 50% { height: 38px; y: 20px; } }
+      @keyframes waveBar2 { 0%, 100% { height: 26px; y: 32px; } 50% { height: 48px; y: 10px; } }
+      @keyframes waveBar3 { 0%, 100% { height: 18px; y: 40px; } 50% { height: 54px; y: 4px; } }
+      @keyframes waveBar4 { 0%, 100% { height: 32px; y: 26px; } 50% { height: 50px; y: 8px; } }
+      @keyframes waveBar5 { 0%, 100% { height: 22px; y: 36px; } 50% { height: 44px; y: 14px; } }
+      @keyframes waveBar6 { 0%, 100% { height: 30px; y: 28px; } 50% { height: 52px; y: 6px; } }
+      @keyframes waveBar7 { 0%, 100% { height: 16px; y: 42px; } 50% { height: 40px; y: 18px; } }
+      @keyframes waveBar8 { 0%, 100% { height: 10px; y: 48px; } 50% { height: 28px; y: 30px; } }
+
+      .b1 { animation: waveBar1 1.2s infinite ease-in-out; }
+      .b2 { animation: waveBar2 0.9s infinite ease-in-out; }
+      .b3 { animation: waveBar3 1.4s infinite ease-in-out; }
+      .b4 { animation: waveBar4 1.1s infinite ease-in-out; }
+      .b5 { animation: waveBar5 1.3s infinite ease-in-out; }
+      .b6 { animation: waveBar6 0.85s infinite ease-in-out; }
+      .b7 { animation: waveBar7 1.25s infinite ease-in-out; }
+      .b8 { animation: waveBar8 1.05s infinite ease-in-out; }
+
+      @keyframes liveDot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+      .pulse-dot { animation: liveDot 2s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Card Body -->
+  <rect x="1" y="1" width="548" height="268" rx="20" fill="url(#vyaasBg)" stroke="url(#vyaasBorder)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="548" height="268" rx="20" fill="url(#vyaasGlow)"/>
+
+  <!-- Top Category Tag -->
+  <g transform="translate(28, 24)">
+    <rect x="0" y="0" width="138" height="24" rx="6" fill="#172554" stroke="#1E40AF" stroke-width="0.8"/>
+    <circle cx="10" cy="12" r="3" fill="#38BDF8" class="pulse-dot"/>
+    <text x="18" y="16" fill="#93C5FD" font-size="10" font-weight="700" class="sf-font" letter-spacing="0.6">FLAGSHIP · VOICE AI</text>
+  </g>
+
+  <!-- External Arrow Link -->
+  <g transform="translate(502, 24)">
+    <circle cx="10" cy="10" r="10" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+    <path d="M 7 13 L 13 7 M 9 7 L 13 7 L 13 11" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Card Title -->
+  <text x="28" y="80" fill="#F8FAFC" font-size="24" font-weight="700" class="sf-font" letter-spacing="-0.5">Vyaas AI</text>
+  <text x="138" y="79" fill="#38BDF8" font-size="12" font-weight="600" class="sf-font" letter-spacing="0.2">Real-Time Voice Assistant</text>
+
+  <!-- Subtitle / Architecture Note -->
+  <text x="28" y="104" fill="#94A3B8" font-size="12" font-weight="400" class="sf-font" letter-spacing="0.1">Sub-second conversational intelligence with bi-directional streaming,</text>
+  <text x="28" y="122" fill="#94A3B8" font-size="12" font-weight="400" class="sf-font" letter-spacing="0.1">proactive multi-turn reasoning, and instant edge fallbacks.</text>
+
+  <!-- Spectrogram Audio Box (Glass Inset) -->
+  <g transform="translate(28, 140)">
+    <rect x="0" y="0" width="494" height="68" rx="12" fill="#030712" fill-opacity="0.6" stroke="#1F2937" stroke-width="1"/>
+
+    <!-- Telemetry Label -->
+    <text x="16" y="24" fill="#64748B" font-size="10" font-weight="600" class="sf-font" letter-spacing="0.5">OPUS DSP · WEBSOCKET AUDIO STREAM</text>
+    <text x="16" y="44" fill="#38BDF8" font-size="15" font-weight="700" class="sf-font" letter-spacing="-0.3">&lt; 280ms</text>
+    <text x="82" y="44" fill="#94A3B8" font-size="10" font-weight="500" class="sf-font">E2E LATENCY</text>
+
+    <!-- Live Animated Waveform Bars -->
+    <g transform="translate(330, 4)">
+      <rect class="b1" x="0" y="46" width="6" height="12" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b2" x="14" y="32" width="6" height="26" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b3" x="28" y="40" width="6" height="18" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b4" x="42" y="26" width="6" height="32" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b5" x="56" y="36" width="6" height="22" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b6" x="70" y="28" width="6" height="30" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b7" x="84" y="42" width="6" height="16" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b8" x="98" y="48" width="6" height="10" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b2" x="112" y="32" width="6" height="26" rx="3" fill="url(#waveGrad)"/>
+      <rect class="b4" x="126" y="26" width="6" height="32" rx="3" fill="url(#waveGrad)"/>
+    </g>
+  </g>
+
+  <!-- Bottom Tech Tags -->
+  <g transform="translate(28, 224)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="76" height="24" rx="6" fill="#111827" stroke="#1E293B" stroke-width="0.8"/>
+      <text x="38" y="16" text-anchor="middle" fill="#CBD5E1" font-size="10.5" font-weight="500" class="sf-font">LiveKit AI</text>
+    </g>
+    <g transform="translate(84, 0)">
+      <rect x="0" y="0" width="86" height="24" rx="6" fill="#111827" stroke="#1E293B" stroke-width="0.8"/>
+      <text x="43" y="16" text-anchor="middle" fill="#CBD5E1" font-size="10.5" font-weight="500" class="sf-font">WebSockets</text>
+    </g>
+    <g transform="translate(178, 0)">
+      <rect x="0" y="0" width="70" height="24" rx="6" fill="#111827" stroke="#1E293B" stroke-width="0.8"/>
+      <text x="35" y="16" text-anchor="middle" fill="#CBD5E1" font-size="10.5" font-weight="500" class="sf-font">Next.js</text>
+    </g>
+    <g transform="translate(256, 0)">
+      <rect x="0" y="0" width="66" height="24" rx="6" fill="#111827" stroke="#1E293B" stroke-width="0.8"/>
+      <text x="33" y="16" text-anchor="middle" fill="#CBD5E1" font-size="10.5" font-weight="500" class="sf-font">Python</text>
+    </g>
+    <g transform="translate(330, 0)">
+      <rect x="0" y="0" width="80" height="24" rx="6" fill="#111827" stroke="#1E293B" stroke-width="0.8"/>
+      <text x="40" y="16" text-anchor="middle" fill="#CBD5E1" font-size="10.5" font-weight="500" class="sf-font">Deepgram</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 270" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="chaksuBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071311"/>
+      <stop offset="50%" stop-color="#081A16"/>
+      <stop offset="100%" stop-color="#050C0A"/>
+    </linearGradient>
+
+    <!-- Glass Border Gradient -->
+    <linearGradient id="chaksuBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.4"/>
+      <stop offset="40%" stop-color="#10B981" stop-opacity="0.2"/>
+      <stop offset="80%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Emerald Ambient Glow -->
+    <radialGradient id="emeraldGlow" cx="80%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#34D399" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      .sf-font {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      /* Radar Sweep Animation */
+      @keyframes reticlePulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.08); opacity: 0.4; }
+      }
+      @keyframes scanLine {
+        0% { transform: translateY(0); opacity: 0; }
+        20% { opacity: 0.8; }
+        80% { opacity: 0.8; }
+        100% { transform: translateY(50px); opacity: 0; }
+      }
+      @keyframes blinkDot {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+      }
+
+      .reticle-pulse {
+        animation: reticlePulse 3s infinite ease-in-out;
+        transform-origin: 304px 62px;
+      }
+      .hud-scan {
+        animation: scanLine 2.4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .live-blink {
+        animation: blinkDot 1.8s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Card Body -->
+  <rect x="1" y="1" width="368" height="268" rx="20" fill="url(#chaksuBg)" stroke="url(#chaksuBorder)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="368" height="268" rx="20" fill="url(#emeraldGlow)"/>
+
+  <!-- Category Tag -->
+  <g transform="translate(24, 24)">
+    <rect x="0" y="0" width="134" height="24" rx="6" fill="#064E3B" fill-opacity="0.6" stroke="#059669" stroke-width="0.8"/>
+    <circle cx="10" cy="12" r="3" fill="#34D399" class="live-blink"/>
+    <text x="18" y="16" fill="#6EE7B7" font-size="10" font-weight="700" class="sf-font" letter-spacing="0.6">CV · DRIVER SAFETY</text>
+  </g>
+
+  <!-- External Arrow Link -->
+  <g transform="translate(324, 24)">
+    <circle cx="10" cy="10" r="10" fill="#132E27" stroke="#059669" stroke-width="0.8"/>
+    <path d="M 7 13 L 13 7 M 9 7 L 13 7 L 13 11" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Title -->
+  <text x="24" y="80" fill="#F8FAFC" font-size="22" font-weight="700" class="sf-font" letter-spacing="-0.4">Chaksu</text>
+  <text x="110" y="79" fill="#34D399" font-size="11.5" font-weight="600" class="sf-font" letter-spacing="0.2">Vision Guard</text>
+
+  <!-- Description -->
+  <text x="24" y="104" fill="#94A3B8" font-size="12" font-weight="400" class="sf-font" letter-spacing="0.1">Edge AI driver safety calculating 3D facial</text>
+  <text x="24" y="122" fill="#94A3B8" font-size="12" font-weight="400" class="sf-font" letter-spacing="0.1">mesh geometry &amp; EAR for acoustic alerts.</text>
+
+  <!-- HUD Reticle & Eye Mesh Graphic -->
+  <g transform="translate(24, 138)">
+    <rect x="0" y="0" width="322" height="70" rx="12" fill="#04120E" stroke="#064E3B" stroke-width="0.8"/>
+
+    <!-- Left: Telemetry Data -->
+    <g transform="translate(16, 18)">
+      <text x="0" y="10" fill="#6EE7B7" font-size="9.5" font-weight="700" class="sf-font" letter-spacing="0.8">FACIAL MESH EAR</text>
+      <text x="0" y="32" fill="#F8FAFC" font-size="16" font-weight="700" class="sf-font" letter-spacing="-0.4">0.34 <tspan fill="#34D399" font-size="10" font-weight="600">[NORMAL]</tspan></text>
+      <text x="0" y="46" fill="#64748B" font-size="9" font-weight="500" class="sf-font">60 FPS EDGE INFERENCE</text>
+    </g>
+
+    <!-- Right: Eye Geometry & HUD Target -->
+    <g transform="translate(220, 10)">
+      <!-- HUD Circular Reticle -->
+      <circle class="reticle-pulse" cx="42" cy="25" r="22" fill="none" stroke="#34D399" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+      <circle cx="42" cy="25" r="16" fill="none" stroke="#10B981" stroke-opacity="0.5"/>
+      <line x1="16" y1="25" x2="68" y2="25" stroke="#34D399" stroke-opacity="0.3" stroke-width="0.8"/>
+      <line x1="42" y1="0" x2="42" y2="50" stroke="#34D399" stroke-opacity="0.3" stroke-width="0.8"/>
+
+      <!-- Vector Eye Contour -->
+      <path d="M 28 25 Q 42 15 56 25 Q 42 35 28 25 Z" fill="none" stroke="#6EE7B7" stroke-width="1.2"/>
+      <circle cx="42" cy="25" r="4.5" fill="#34D399" fill-opacity="0.7"/>
+      <circle cx="42" cy="25" r="1.8" fill="#FFFFFF"/>
+
+      <!-- Animated Scanning Line -->
+      <line class="hud-scan" x1="22" y1="0" x2="62" y2="0" stroke="#34D399" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Bottom Badges -->
+  <g transform="translate(24, 224)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="68" height="24" rx="6" fill="#041F18" stroke="#064E3B" stroke-width="0.8"/>
+      <text x="34" y="16" text-anchor="middle" fill="#A7F3D0" font-size="10" font-weight="500" class="sf-font">OpenCV</text>
+    </g>
+    <g transform="translate(74, 0)">
+      <rect x="0" y="0" width="64" height="24" rx="6" fill="#041F18" stroke="#064E3B" stroke-width="0.8"/>
+      <text x="32" y="16" text-anchor="middle" fill="#A7F3D0" font-size="10" font-weight="500" class="sf-font">NumPy</text>
+    </g>
+    <g transform="translate(144, 0)">
+      <rect x="0" y="0" width="76" height="24" rx="6" fill="#041F18" stroke="#064E3B" stroke-width="0.8"/>
+      <text x="38" y="16" text-anchor="middle" fill="#A7F3D0" font-size="10" font-weight="500" class="sf-font">MediaPipe</text>
+    </g>
+    <g transform="translate(226, 0)">
+      <rect x="0" y="0" width="96" height="24" rx="6" fill="#041F18" stroke="#064E3B" stroke-width="0.8"/>
+      <text x="48" y="16" text-anchor="middle" fill="#A7F3D0" font-size="10" font-weight="500" class="sf-font">Zero Cloud Lag</text>
+    </g>
+  </g>
+</svg>

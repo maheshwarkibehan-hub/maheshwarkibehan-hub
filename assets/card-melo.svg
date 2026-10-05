@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="meloBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0A1E"/>
+      <stop offset="50%" stop-color="#140E2D"/>
+      <stop offset="100%" stop-color="#080612"/>
+    </linearGradient>
+
+    <!-- Glass Border Gradient -->
+    <linearGradient id="meloBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.4"/>
+      <stop offset="40%" stop-color="#818CF8" stop-opacity="0.2"/>
+      <stop offset="80%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Violet Ambient Glow -->
+    <radialGradient id="violetGlow" cx="80%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#A855F7" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Vinyl Center Gradient -->
+    <radialGradient id="recordCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </radialGradient>
+
+    <style>
+      .sf-font {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      /* Vinyl Rotation */
+      @keyframes spinVinyl {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .vinyl-disc {
+        animation: spinVinyl 12s linear infinite;
+        transform-origin: 388px 120px;
+      }
+      @keyframes musicPulse {
+        0%, 100% { opacity: 0.9; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(0.96); }
+      }
+      .pulse-ring {
+        animation: musicPulse 3s infinite ease-in-out;
+        transform-origin: 388px 120px;
+      }
+    </style>
+  </defs>
+
+  <!-- Card Body -->
+  <rect x="1" y="1" width="458" height="238" rx="20" fill="url(#meloBg)" stroke="url(#meloBorder)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="458" height="238" rx="20" fill="url(#violetGlow)"/>
+
+  <!-- Top Category Tag -->
+  <g transform="translate(24, 22)">
+    <rect x="0" y="0" width="138" height="24" rx="6" fill="#3B0764" fill-opacity="0.6" stroke="#7E22CE" stroke-width="0.8"/>
+    <circle cx="10" cy="12" r="3" fill="#C084FC"/>
+    <text x="18" y="16" fill="#E9D5FF" font-size="10" font-weight="700" class="sf-font" letter-spacing="0.6">NATIVE PWA · AUDIO</text>
+  </g>
+
+  <!-- External Arrow Link -->
+  <g transform="translate(414, 22)">
+    <circle cx="10" cy="10" r="10" fill="#2E1065" stroke="#7E22CE" stroke-width="0.8"/>
+    <path d="M 7 13 L 13 7 M 9 7 L 13 7 L 13 11" stroke="#C084FC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Title -->
+  <text x="24" y="76" fill="#F8FAFC" font-size="20" font-weight="700" class="sf-font" letter-spacing="-0.4">MElo Music Player</text>
+  <text x="24" y="98" fill="#C084FC" font-size="11.5" font-weight="600" class="sf-font" letter-spacing="0.2">Offline DSP Audio Engine &amp; Streaming PWA</text>
+
+  <!-- Description -->
+  <text x="24" y="122" fill="#94A3B8" font-size="12" font-weight="400" class="sf-font" letter-spacing="0.1">Minimalist streaming player with intelligent local caching,</text>
+  <text x="24" y="140" fill="#94A3B8" font-size="12" font-weight="400" class="sf-font" letter-spacing="0.1">seamless queue orchestration, and native Android wrapping.</text>
+
+  <!-- Vinyl Record Graphic (Right Side Accent) -->
+  <g class="pulse-ring">
+    <circle cx="388" cy="120" r="62" fill="none" stroke="#A855F7" stroke-opacity="0.15" stroke-width="1.5"/>
+  </g>
+  <g class="vinyl-disc">
+    <!-- Vinyl Base Body -->
+    <circle cx="388" cy="120" r="54" fill="#090514" stroke="#3B0764" stroke-width="1.5"/>
+
+    <!-- Concentric Grooves -->
+    <circle cx="388" cy="120" r="46" fill="none" stroke="#1F1538" stroke-width="1"/>
+    <circle cx="388" cy="120" r="39" fill="none" stroke="#281A4A" stroke-width="0.75"/>
+    <circle cx="388" cy="120" r="32" fill="none" stroke="#1F1538" stroke-width="1"/>
+    <circle cx="388" cy="120" r="25" fill="none" stroke="#281A4A" stroke-width="0.75"/>
+
+    <!-- Center Label -->
+    <circle cx="388" cy="120" r="18" fill="url(#recordCenter)"/>
+    <circle cx="388" cy="120" r="5" fill="#090514"/>
+    <circle cx="388" cy="120" r="2" fill="#F3E8FF"/>
+
+    <!-- Specular Vinyl Sheen -->
+    <path d="M 350 95 Q 388 120 375 160" fill="none" stroke="#E9D5FF" stroke-opacity="0.15" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bottom Badges -->
+  <g transform="translate(24, 192)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="76" height="24" rx="6" fill="#1E1436" stroke="#4C1D95" stroke-width="0.8"/>
+      <text x="38" y="16" text-anchor="middle" fill="#DDD6FE" font-size="10" font-weight="500" class="sf-font">Capacitor</text>
+    </g>
+    <g transform="translate(84, 0)">
+      <rect x="0" y="0" width="82" height="24" rx="6" fill="#1E1436" stroke="#4C1D95" stroke-width="0.8"/>
+      <text x="41" y="16" text-anchor="middle" fill="#DDD6FE" font-size="10" font-weight="500" class="sf-font">Offline First</text>
+    </g>
+    <g transform="translate(174, 0)">
+      <rect x="0" y="0" width="68" height="24" rx="6" fill="#1E1436" stroke="#4C1D95" stroke-width="0.8"/>
+      <text x="34" y="16" text-anchor="middle" fill="#DDD6FE" font-size="10" font-weight="500" class="sf-font">Node.js</text>
+    </g>
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="90" height="24" rx="6" fill="#1E1436" stroke="#4C1D95" stroke-width="0.8"/>
+      <text x="45" y="16" text-anchor="middle" fill="#DDD6FE" font-size="10" font-weight="500" class="sf-font">Audio DSP</text>
+    </g>
+  </g>
+</svg>

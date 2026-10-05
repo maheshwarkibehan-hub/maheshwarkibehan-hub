@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 130" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="dockBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E1A"/>
+      <stop offset="50%" stop-color="#0E1426"/>
+      <stop offset="100%" stop-color="#080C16"/>
+    </linearGradient>
+
+    <!-- Glass Border Gradient -->
+    <linearGradient id="dockBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Top Specular Highlight -->
+    <linearGradient id="dockHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="80%" stop-color="#818CF8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </linearGradient>
+
+    <style>
+      .sf-font {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+    </style>
+  </defs>
+
+  <!-- Dock Body -->
+  <rect x="1" y="1" width="938" height="128" rx="18" fill="url(#dockBg)" stroke="url(#dockBorder)" stroke-width="1.2"/>
+  <path d="M 30 1 L 910 1" stroke="url(#dockHighlight)" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Dock Header Bar (macOS Window Control Dots) -->
+  <g transform="translate(24, 18)">
+    <circle cx="0" cy="0" r="4.5" fill="#EF4444"/>
+    <circle cx="14" cy="0" r="4.5" fill="#F59E0B"/>
+    <circle cx="28" cy="0" r="4.5" fill="#10B981"/>
+    <text x="44" y="4" fill="#94A3B8" font-size="10.5" font-weight="700" class="sf-font" letter-spacing="0.8"> ARCHITECTURAL SYSTEM DOCK</text>
+  </g>
+
+  <!-- 3 Columns Divider Lines -->
+  <line x1="316" y1="36" x2="316" y2="114" stroke="#1E293B" stroke-width="0.8" stroke-dasharray="3 3"/>
+  <line x1="628" y1="36" x2="628" y2="114" stroke="#1E293B" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+  <!-- ================= COLUMN 1: AI & Vision ================= -->
+  <g transform="translate(24, 44)">
+    <circle cx="4" cy="4" r="3" fill="#38BDF8"/>
+    <text x="14" y="8" fill="#38BDF8" font-size="10" font-weight="700" class="sf-font" letter-spacing="0.5">AI &amp; COMPUTER VISION</text>
+
+    <!-- Pills Row 1 -->
+    <g transform="translate(0, 18)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="56" height="20" rx="5" fill="#0C1F38" stroke="#1E3A8A" stroke-width="0.75"/>
+        <text x="28" y="14" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="500" class="sf-font">Python</text>
+      </g>
+      <g transform="translate(62, 0)">
+        <rect x="0" y="0" width="60" height="20" rx="5" fill="#0C1F38" stroke="#1E3A8A" stroke-width="0.75"/>
+        <text x="30" y="14" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="500" class="sf-font">OpenCV</text>
+      </g>
+      <g transform="translate(128, 0)">
+        <rect x="0" y="0" width="70" height="20" rx="5" fill="#0C1F38" stroke="#1E3A8A" stroke-width="0.75"/>
+        <text x="35" y="14" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="500" class="sf-font">MediaPipe</text>
+      </g>
+      <g transform="translate(204, 0)">
+        <rect x="0" y="0" width="56" height="20" rx="5" fill="#0C1F38" stroke="#1E3A8A" stroke-width="0.75"/>
+        <text x="28" y="14" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="500" class="sf-font">NumPy</text>
+      </g>
+    </g>
+
+    <!-- Pills Row 2 -->
+    <g transform="translate(0, 44)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="80" height="20" rx="5" fill="#0C1F38" stroke="#1E3A8A" stroke-width="0.75"/>
+        <text x="40" y="14" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="500" class="sf-font">LiveKit DSP</text>
+      </g>
+      <g transform="translate(86, 0)">
+        <rect x="0" y="0" width="78" height="20" rx="5" fill="#0C1F38" stroke="#1E3A8A" stroke-width="0.75"/>
+        <text x="39" y="14" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="500" class="sf-font">Ollama LLM</text>
+      </g>
+      <g transform="translate(170, 0)">
+        <rect x="0" y="0" width="86" height="20" rx="5" fill="#0C1F38" stroke="#1E3A8A" stroke-width="0.75"/>
+        <text x="43" y="14" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="500" class="sf-font">Groq / Gemini</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= COLUMN 2: Native & Full-Stack ================= -->
+  <g transform="translate(336, 44)">
+    <circle cx="4" cy="4" r="3" fill="#818CF8"/>
+    <text x="14" y="8" fill="#818CF8" font-size="10" font-weight="700" class="sf-font" letter-spacing="0.5">NATIVE &amp; FULL-STACK</text>
+
+    <!-- Pills Row 1 -->
+    <g transform="translate(0, 18)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="60" height="20" rx="5" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.75"/>
+        <text x="30" y="14" text-anchor="middle" fill="#C7D2FE" font-size="9.5" font-weight="500" class="sf-font">Next.js</text>
+      </g>
+      <g transform="translate(66, 0)">
+        <rect x="0" y="0" width="62" height="20" rx="5" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.75"/>
+        <text x="31" y="14" text-anchor="middle" fill="#C7D2FE" font-size="9.5" font-weight="500" class="sf-font">React 19</text>
+      </g>
+      <g transform="translate(134, 0)">
+        <rect x="0" y="0" width="76" height="20" rx="5" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.75"/>
+        <text x="38" y="14" text-anchor="middle" fill="#C7D2FE" font-size="9.5" font-weight="500" class="sf-font">TypeScript</text>
+      </g>
+      <g transform="translate(216, 0)">
+        <rect x="0" y="0" width="52" height="20" rx="5" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.75"/>
+        <text x="26" y="14" text-anchor="middle" fill="#C7D2FE" font-size="9.5" font-weight="500" class="sf-font">Kotlin</text>
+      </g>
+    </g>
+
+    <!-- Pills Row 2 -->
+    <g transform="translate(0, 44)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="62" height="20" rx="5" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.75"/>
+        <text x="31" y="14" text-anchor="middle" fill="#C7D2FE" font-size="9.5" font-weight="500" class="sf-font">Node.js</text>
+      </g>
+      <g transform="translate(68, 0)">
+        <rect x="0" y="0" width="70" height="20" rx="5" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.75"/>
+        <text x="35" y="14" text-anchor="middle" fill="#C7D2FE" font-size="9.5" font-weight="500" class="sf-font">Capacitor</text>
+      </g>
+      <g transform="translate(144, 0)">
+        <rect x="0" y="0" width="62" height="20" rx="5" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.75"/>
+        <text x="31" y="14" text-anchor="middle" fill="#C7D2FE" font-size="9.5" font-weight="500" class="sf-font">Tauri v2</text>
+      </g>
+      <g transform="translate(212, 0)">
+        <rect x="0" y="0" width="56" height="20" rx="5" fill="#1E1B4B" stroke="#4338CA" stroke-width="0.75"/>
+        <text x="28" y="14" text-anchor="middle" fill="#C7D2FE" font-size="9.5" font-weight="500" class="sf-font">Tailwind</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= COLUMN 3: Systems & Hardware ================= -->
+  <g transform="translate(648, 44)">
+    <circle cx="4" cy="4" r="3" fill="#34D399"/>
+    <text x="14" y="8" fill="#34D399" font-size="10" font-weight="700" class="sf-font" letter-spacing="0.5">SYSTEMS &amp; HARDWARE</text>
+
+    <!-- Pills Row 1 -->
+    <g transform="translate(0, 18)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="46" height="20" rx="5" fill="#064E3B" stroke="#059669" stroke-width="0.75"/>
+        <text x="23" y="14" text-anchor="middle" fill="#A7F3D0" font-size="9.5" font-weight="500" class="sf-font">C++</text>
+      </g>
+      <g transform="translate(52, 0)">
+        <rect x="0" y="0" width="60" height="20" rx="5" fill="#064E3B" stroke="#059669" stroke-width="0.75"/>
+        <text x="30" y="14" text-anchor="middle" fill="#A7F3D0" font-size="9.5" font-weight="500" class="sf-font">Arduino</text>
+      </g>
+      <g transform="translate(118, 0)">
+        <rect x="0" y="0" width="90" height="20" rx="5" fill="#064E3B" stroke="#059669" stroke-width="0.75"/>
+        <text x="45" y="14" text-anchor="middle" fill="#A7F3D0" font-size="9.5" font-weight="500" class="sf-font">Servo Robotics</text>
+      </g>
+      <g transform="translate(214, 0)">
+        <rect x="0" y="0" width="46" height="20" rx="5" fill="#064E3B" stroke="#059669" stroke-width="0.75"/>
+        <text x="23" y="14" text-anchor="middle" fill="#A7F3D0" font-size="9.5" font-weight="500" class="sf-font">IoT</text>
+      </g>
+    </g>
+
+    <!-- Pills Row 2 -->
+    <g transform="translate(0, 44)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="82" height="20" rx="5" fill="#064E3B" stroke="#059669" stroke-width="0.75"/>
+        <text x="41" y="14" text-anchor="middle" fill="#A7F3D0" font-size="9.5" font-weight="500" class="sf-font">Linux / Bash</text>
+      </g>
+      <g transform="translate(88, 0)">
+        <rect x="0" y="0" width="42" height="20" rx="5" fill="#064E3B" stroke="#059669" stroke-width="0.75"/>
+        <text x="21" y="14" text-anchor="middle" fill="#A7F3D0" font-size="9.5" font-weight="500" class="sf-font">Git</text>
+      </g>
+      <g transform="translate(136, 0)">
+        <rect x="0" y="0" width="66" height="20" rx="5" fill="#064E3B" stroke="#059669" stroke-width="0.75"/>
+        <text x="33" y="14" text-anchor="middle" fill="#A7F3D0" font-size="9.5" font-weight="500" class="sf-font">Supabase</text>
+      </g>
+      <g transform="translate(208, 0)">
+        <rect x="0" y="0" width="58" height="20" rx="5" fill="#064E3B" stroke="#059669" stroke-width="0.75"/>
+        <text x="29" y="14" text-anchor="middle" fill="#A7F3D0" font-size="9.5" font-weight="500" class="sf-font">Firebase</text>
+      </g>
+    </g>
+  </g>
+</svg>

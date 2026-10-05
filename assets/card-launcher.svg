@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="launcherBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08101E"/>
+      <stop offset="50%" stop-color="#0B1A2F"/>
+      <stop offset="100%" stop-color="#050A14"/>
+    </linearGradient>
+
+    <!-- Glass Border Gradient -->
+    <linearGradient id="launcherBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#60A5FA" stop-opacity="0.2"/>
+      <stop offset="80%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Cyan Spotlight -->
+    <radialGradient id="skyGlow" cx="80%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#60A5FA" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Phone Glass Gradient -->
+    <linearGradient id="phoneGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <style>
+      .sf-font {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      /* Floating Glass Cards */
+      @keyframes floatLayer {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      @keyframes springPulse {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 0.3; }
+      }
+
+      .float-group {
+        animation: floatLayer 3.5s infinite ease-in-out;
+      }
+      .spring-glow {
+        animation: springPulse 2s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Card Body -->
+  <rect x="1" y="1" width="458" height="238" rx="20" fill="url(#launcherBg)" stroke="url(#launcherBorder)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="458" height="238" rx="20" fill="url(#skyGlow)"/>
+
+  <!-- Top Category Tag -->
+  <g transform="translate(24, 22)">
+    <rect x="0" y="0" width="154" height="24" rx="6" fill="#0C4A6E" fill-opacity="0.6" stroke="#0284C7" stroke-width="0.8"/>
+    <circle cx="10" cy="12" r="3" fill="#38BDF8"/>
+    <text x="18" y="16" fill="#BAE6FD" font-size="10" font-weight="700" class="sf-font" letter-spacing="0.6">ANDROID · SPATIAL UI</text>
+  </g>
+
+  <!-- External Arrow Link -->
+  <g transform="translate(414, 22)">
+    <circle cx="10" cy="10" r="10" fill="#082F49" stroke="#0284C7" stroke-width="0.8"/>
+    <path d="M 7 13 L 13 7 M 9 7 L 13 7 L 13 11" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Title -->
+  <text x="24" y="76" fill="#F8FAFC" font-size="20" font-weight="700" class="sf-font" letter-spacing="-0.4">Liquid Glass Launcher</text>
+  <text x="24" y="98" fill="#60A5FA" font-size="11.5" font-weight="600" class="sf-font" letter-spacing="0.2">Spatial Glassmorphism &amp; Spring Physics</text>
+
+  <!-- Description -->
+  <text x="24" y="122" fill="#94A3B8" font-size="12" font-weight="400" class="sf-font" letter-spacing="0.1">Futuristic Android launcher crafted with translucent glass layers,</text>
+  <text x="24" y="140" fill="#94A3B8" font-size="12" font-weight="400" class="sf-font" letter-spacing="0.1">120Hz physics-driven spring gestures, and focused app spaces.</text>
+
+  <!-- Phone & Floating Glass Mockup (Right Side Accent) -->
+  <g class="float-group" transform="translate(346, 68)">
+    <!-- Phone Chassis Wireframe -->
+    <rect x="0" y="0" width="76" height="124" rx="14" fill="url(#phoneGlass)" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.7"/>
+    <!-- Phone Screen Notch Pill -->
+    <rect x="26" y="5" width="24" height="4" rx="2" fill="#38BDF8" fill-opacity="0.8"/>
+
+    <!-- Translucent App Cards on Screen -->
+    <rect x="10" y="16" width="56" height="18" rx="5" fill="#38BDF8" fill-opacity="0.15" stroke="#60A5FA" stroke-width="0.7" stroke-opacity="0.5"/>
+    <rect x="10" y="40" width="56" height="28" rx="5" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="0.7" stroke-opacity="0.5"/>
+
+    <!-- Minimalist App Dock Inside Phone -->
+    <g transform="translate(10, 88)">
+      <rect x="0" y="0" width="56" height="18" rx="7" fill="#0F172A" stroke="#334155" stroke-width="0.8"/>
+      <circle cx="10" cy="9" r="3.5" fill="#38BDF8"/>
+      <circle cx="21" cy="9" r="3.5" fill="#818CF8"/>
+      <circle cx="32" cy="9" r="3.5" fill="#34D399"/>
+      <circle cx="43" cy="9" r="3.5" fill="#F472B6"/>
+    </g>
+
+    <!-- Floating Glow Particle -->
+    <circle class="spring-glow" cx="64" cy="22" r="3" fill="#38BDF8"/>
+  </g>
+
+  <!-- Bottom Badges -->
+  <g transform="translate(24, 192)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="60" height="24" rx="6" fill="#0C2D48" stroke="#0369A1" stroke-width="0.8"/>
+      <text x="30" y="16" text-anchor="middle" fill="#BAE6FD" font-size="10" font-weight="500" class="sf-font">Kotlin</text>
+    </g>
+    <g transform="translate(68, 0)">
+      <rect x="0" y="0" width="94" height="24" rx="6" fill="#0C2D48" stroke="#0369A1" stroke-width="0.8"/>
+      <text x="47" y="16" text-anchor="middle" fill="#BAE6FD" font-size="10" font-weight="500" class="sf-font">Android SDK</text>
+    </g>
+    <g transform="translate(170, 0)">
+      <rect x="0" y="0" width="102" height="24" rx="6" fill="#0C2D48" stroke="#0369A1" stroke-width="0.8"/>
+      <text x="51" y="16" text-anchor="middle" fill="#BAE6FD" font-size="10" font-weight="500" class="sf-font">Spring Physics</text>
+    </g>
+    <g transform="translate(280, 0)">
+      <rect x="0" y="0" width="108" height="24" rx="6" fill="#0C2D48" stroke="#0369A1" stroke-width="0.8"/>
+      <text x="54" y="16" text-anchor="middle" fill="#BAE6FD" font-size="10" font-weight="500" class="sf-font">Glassmorphism</text>
+    </g>
+  </g>
+</svg>

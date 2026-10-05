@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 250" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0B111E"/>
+      <stop offset="100%" stop-color="#060910"/>
+    </linearGradient>
+
+    <!-- Glass Chamfer Border Gradient -->
+    <linearGradient id="heroBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#818CF8" stop-opacity="0.15"/>
+      <stop offset="80%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Top Specular Highlight -->
+    <linearGradient id="topHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#818CF8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Spotlights -->
+    <radialGradient id="cyanSpotlight" cx="15%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="irisSpotlight" cx="85%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.18"/>
+      <stop offset="70%" stop-color="#818CF8" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Pill Glass Background -->
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <style>
+      .sf-font {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      @keyframes pulseBeacon {
+        0% { r: 4px; opacity: 1; }
+        50% { r: 9px; opacity: 0.25; }
+        100% { r: 4px; opacity: 1; }
+      }
+      @keyframes beaconRing {
+        0% { r: 5px; opacity: 0.8; stroke-width: 1.5px; }
+        100% { r: 13px; opacity: 0; stroke-width: 0.5px; }
+      }
+      .beacon-core {
+        animation: pulseBeacon 2.5s infinite ease-in-out;
+      }
+      .beacon-ring {
+        animation: beaconRing 2.5s infinite cubic-bezier(0.2, 0.8, 0.4, 1);
+        transform-origin: 52px 42px;
+      }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect x="1" y="1" width="938" height="248" rx="20" fill="url(#heroBg)" stroke="url(#heroBorder)" stroke-width="1.5"/>
+
+  <!-- Spotlights -->
+  <rect x="1" y="1" width="938" height="248" rx="20" fill="url(#cyanSpotlight)"/>
+  <rect x="1" y="1" width="938" height="248" rx="20" fill="url(#irisSpotlight)"/>
+
+  <!-- Top Glass Highlight Line -->
+  <path d="M 30 1 L 910 1" stroke="url(#topHighlight)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Status / Telemetry Pill (Top Left) -->
+  <g transform="translate(36, 28)">
+    <rect x="0" y="0" width="310" height="28" rx="14" fill="url(#pillBg)" stroke="#334155" stroke-width="0.75"/>
+    <!-- Radar Beacon -->
+    <circle class="beacon-ring" cx="16" cy="14" r="5" fill="none" stroke="#10B981"/>
+    <circle class="beacon-core" cx="16" cy="14" r="4" fill="#10B981"/>
+    <text x="32" y="18" fill="#94A3B8" font-size="11" font-weight="600" class="sf-font" letter-spacing="0.5">CLASS 10 · KAUSHAMBI, IN · ACTIVE SYSTEM</text>
+  </g>
+
+  <!-- Top Right Sovereign Pill -->
+  <g transform="translate(710, 28)">
+    <rect x="0" y="0" width="194" height="28" rx="14" fill="url(#pillBg)" stroke="#334155" stroke-width="0.75"/>
+    <text x="14" y="18" fill="#38BDF8" font-size="11" font-weight="600" class="sf-font" letter-spacing="0.4"> CUPERTINO CRAFT · 2026</text>
+  </g>
+
+  <!-- Primary Name / Title -->
+  <text x="36" y="106" fill="#F8FAFC" font-size="36" font-weight="700" class="sf-font" letter-spacing="-0.8">Maheshwar Hari Tripathi</text>
+
+  <!-- Subtitle / Role -->
+  <text x="36" y="136" fill="#93C5FD" font-size="15" font-weight="600" class="sf-font" letter-spacing="-0.2">Full-Stack Systems &amp; AI Engineer <tspan fill="#64748B">·</tspan> <tspan fill="#CBD5E1">16 y/o Independent Creator</tspan></text>
+
+  <!-- Bio / Mission Statement -->
+  <text x="36" y="166" fill="#94A3B8" font-size="13.5" font-weight="400" class="sf-font" letter-spacing="0.1">Architecting autonomous voice intelligence, edge computer vision, and private zero-cloud systems.</text>
+
+  <!-- Bottom Spec Pills Row -->
+  <g transform="translate(36, 194)">
+    <!-- Pill 1: Vyaas AI -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="158" height="30" rx="8" fill="#111827" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="14" cy="15" r="3.5" fill="#38BDF8"/>
+      <text x="26" y="19" fill="#E2E8F0" font-size="11.5" font-weight="500" class="sf-font">Sub-Second Voice AI</text>
+    </g>
+
+    <!-- Pill 2: Computer Vision -->
+    <g transform="translate(170, 0)">
+      <rect x="0" y="0" width="168" height="30" rx="8" fill="#111827" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="14" cy="15" r="3.5" fill="#34D399"/>
+      <text x="26" y="19" fill="#E2E8F0" font-size="11.5" font-weight="500" class="sf-font">Edge Computer Vision</text>
+    </g>
+
+    <!-- Pill 3: Android Glass -->
+    <g transform="translate(350, 0)">
+      <rect x="0" y="0" width="164" height="30" rx="8" fill="#111827" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="14" cy="15" r="3.5" fill="#818CF8"/>
+      <text x="26" y="19" fill="#E2E8F0" font-size="11.5" font-weight="500" class="sf-font">Spatial Glass Native</text>
+    </g>
+
+    <!-- Pill 4: Embedded Systems -->
+    <g transform="translate(526, 0)">
+      <rect x="0" y="0" width="166" height="30" rx="8" fill="#111827" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="14" cy="15" r="3.5" fill="#F59E0B"/>
+      <text x="26" y="19" fill="#E2E8F0" font-size="11.5" font-weight="500" class="sf-font">Robotics &amp; Embedded</text>
+    </g>
+
+    <!-- Pill 5: Private / Sovereign -->
+    <g transform="translate(704, 0)">
+      <rect x="0" y="0" width="164" height="30" rx="8" fill="#111827" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="14" cy="15" r="3.5" fill="#EC4899"/>
+      <text x="26" y="19" fill="#E2E8F0" font-size="11.5" font-weight="500" class="sf-font">Private Zero-Cloud</text>
+    </g>
+  </g>
+</svg>
